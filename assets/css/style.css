@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* brand color palette */
+  :root {
+    --primary: gray; 
+    --secondary: aquamarine;
+    --tertiary: antiquewhite;
+    --dark: black;
+    --light: white;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  header {
+    padding: 20px 5% 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--dark);
+    box-shadow: 0 5px 45px rgba(146, 204, 206, 0.4);
+  }
+  
+  header h1 {
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 350ms ease-in;
+    font-size: 1.4rem;
+  }
+  
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  
+  .coding-start {
+    background: var(--primary);
+    background-image: url(https://golf-pass.brightspotcdn.com/dims4/default/908b2d0/2147483647/strip/true/crop/6008x3378+0+311/resize/900x506!/quality/90/?url=https%3A%2F%2Fgolf-pass-brightspot.s3.amazonaws.com%2Feb%2F40%2F22bbabf1479c9b615dc73da8ec2f%2Fsr5-0034.JPG), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .coding-start div {
+    flex: 0 0 90%;
+  }
+  
+  .coding-start h2 {
+    color: var(--light);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
+  
+  .main-content {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .content-section{
+    margin: 20px 0;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .content-section > h2 {
+    flex: 0 0 15%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .content-section > div {
+    flex: 0 0 70%;
+  }
+  
+  .content-section p {
+    margin-bottom: 30px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .flex-item {
+    border: 5px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 600ms;
+    font-size: 1rem;
+  }
+  
+  /* feature first portfolio item */
+  .flex-item:first-child {
+      min-height: 350px;
+      flex-basis: 100%;
+  }
+  
+  .flex-item:hover {
+    background-color: var(--dark);
+  }
+  
+  .flex-item div {
+    background-color: var(--dark);
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+  
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact address a {
+    color: var(--secondary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
+  
+  .contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+  }
+  
+  /* portfolio project images */
+  .html-css {
+    background-image: url(https://kdvr.com/wp-content/uploads/sites/11/2013/07/rr4sig.jpg?w=2048);
+  }
+  
+  .past-work {
+    background-image: url(https://d3kqdc25i4tl0t.cloudfront.net/articles/content/_507027_heroimageexplainedoldexperience.jpg);
+  }
+  
+  .javascript {
+    background-image: url(https://denver.cbslocal.com/wp-content/uploads/sites/15909806/2020/07/rox5.jpg);
+  }
+  
+  .puzzles {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGlfXWVZ9leMe-tsMDv__IvHHbWy0zoueYg&usqp=CAU);
+  }
+  
+  .vail {
+    background-image: url(http://s4301.pcdn.co/wp-content/uploads/2013/09/Vail-Village-Winter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  /* end portfolio project images */
+  
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  }
+  .work-content{
+    margin: 20px 0;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .work-content > h2 {
+    flex: 0 0 15%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .coding-start {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
