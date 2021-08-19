@@ -62,7 +62,7 @@
   nav a {
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--secondary);
+    color: var(--light);
     margin-right: 10px;
     background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@
   
   .contact address a:hover {
     background-size: 100% 88%;
-    color: var(--secondary);
+    color: var(--light);
   }
   
   /* portfolio project images */
